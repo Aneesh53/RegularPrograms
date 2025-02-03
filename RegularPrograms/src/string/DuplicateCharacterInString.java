@@ -5,16 +5,16 @@ public class DuplicateCharacterInString {
 		
 	
 
-	String s="abcdefgh".toLowerCase();
+	String s="abcdefghg".toLowerCase();
 	char[] character=s.toCharArray();
 	System.out.println(character);
 	boolean isnotDuplicate=false;
-	for (int j=0;j<s.length();j++)
+	for (int i=0;i<s.length();i++)
 	{
 		boolean isDuplicate = false;
-		for(j=j+1;j<s.length();j++)	
+		for(int j=i+1;j<s.length();j++)	
 		{
-			if(character[j]==character[j])
+			if(character[i]==character[j])
 			{
 				isDuplicate=true;
 				break;
@@ -22,7 +22,7 @@ public class DuplicateCharacterInString {
 		}
 		if(isDuplicate)
 		{
-			System.out.println(character[j]);
+			System.out.println("The duplicate letter is"+character[i]);
 			isnotDuplicate=true;
 		}
 	}
