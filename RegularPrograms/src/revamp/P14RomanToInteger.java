@@ -6,7 +6,7 @@ import java.util.Map;
 public class P14RomanToInteger {
 
 	public static void main(String[] args) {
-		String s="MMXXV";
+		String s="MMDLXXXX";
 		
 		Map<Character,Integer> map=new HashMap<>();
 		map.put('I', 1);
